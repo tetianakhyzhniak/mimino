@@ -1,0 +1,156 @@
+.slider-wrapper{
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 415px) {
+  .slider-wrapper{
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-wrapper{
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider-wrapper{
+    width: 550px;
+  }
+}
+
+// позиционирует слайдер справа (доп. класс)
+.slider-right{
+  justify-content: end;
+  margin-left: auto;
+}
+
+
+
+    /* .swiper {
+      width: 254px;
+      height: 254px;
+    } */
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  width: 245px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-slide{
+    width: 194px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-slide{
+    width: 254px;
+  }
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  width: 126px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  position: static;
+  fill: #000;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  display: none;
+}
+
+.arrow{
+  fill: #000;
+  width: 32px;
+  height: 32px;
+
+  transition: fill var(--animation);
+}
+
+.arrow:hover{
+  fill: #F3C653;
+}
+
+
+
+    // Слайдер ресторан main
+
+// .hp-restaurant-slider{
+//   margin: 0 auto;
+//   max-width: 920px;
+//   overflow: hidden;
+// }
+
+// .swiper-wrapper{
+
+// }
+
+// .hp-res-card{
+//   min-height: 270px;
+//   width: auto;
+//   /* max-width: 270px; */
+
+//   background: #dadada;
+//   border-radius: 2px;
+// }
+
+// .button-wrapper{
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 48px;
+// }
+// .swiper-button-prev{
+//   margin-right: 32px;
+// }
+// .swiper-button-prev,
+// .swiper-button-next{
+//   position: static;
+//   width: 32px;
+//   height: 32px;
+//   margin-top: 0;
+// }
+// .swiper-button-prev::after,
+// .swiper-button-next::after{
+//   display: none;
+// }
+
+.hp-restaurant-slider .arrow{
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+
+  transition: fill var(--animation);
+}
+
+.hp-restaurant-slider .arrow:hover{
+  fill: #F3C653;
+}

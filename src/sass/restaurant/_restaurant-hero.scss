@@ -1,0 +1,103 @@
+// Максим
+.hero {
+  &__restaurant {
+    //   MOBILE
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/mobile/background/mob-bg-rest.jpeg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/mobile/background/mob-bg-rest@2x.jpeg);
+    }
+
+    //   TABLET
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/tablet/background/tabl-bg-rest.jpeg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/tablet/background/tabl-bg-rest@2x.jpeg);
+      }
+    }
+
+    //   DESKTOP
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/desktop/background/desk-bg-rest.jpeg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/desktop/background/desk-bg-rest@2x.jpeg);
+      }
+    }
+  }
+}
+
+.hero-wrapper {
+  &--restaurant {
+    margin-bottom: 113px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 137px;
+    }
+  }
+
+  &__title {
+    &--restaurant {
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 16px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__undertitle {
+    &--restaurant {
+      margin-bottom: 44px;
+
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 56px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 64px;
+      }
+    }
+  }
+}

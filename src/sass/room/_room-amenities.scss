@@ -1,0 +1,122 @@
+.room-amenities-section {
+  background-color: var(--background-main-color);
+}
+.room-amenities-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.room-amenities-title {
+  font-family: var(--title-font);
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.room-amenities-text {
+  font-family: var(--text-font);
+  color: var(--text-main-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 1023px) {
+  .room-amenities-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.room-amenities-item {
+  margin-top: 32px;
+}
+.room-amenities-subtitle {
+  margin-bottom: 16px;
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+}
+.room-amenities-btn {
+  display: block;
+  font-family: var(--text-font);
+  line-height: calc(24 / 20);
+
+  color: var(--main-white);
+  background-color: var(--main-black);
+
+  min-width: 384px;
+  margin: 32px auto 20px;
+  padding: 20px 43px;
+
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .room-amenities-btn {
+    min-width: 284px;
+  }
+}
+.room-amenities-btn:hover,
+.room-amenities-btn:focus {
+  background-color: var(--accent-yellow);
+  color: var(--main-black);
+}
+.room-amenities-link {
+  color: var(--text-accent-color);
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  transition: color 0.25s linear;
+}
+.room-amenities-link:hover,
+.room-amenities-link:focus {
+  color: var(--accent-yellow);
+}
+.room-amenities-icon {
+  fill: currentColor;
+}
+.room-amenities-link:hover > .room-amenities-icon,
+.room-amenities-link:focus > .room-amenities-icon {
+  fill: none;
+}
+
+@media screen and(min-width: 1024px) {
+  .room-amenities-subtitle ~ .room-amenities-text {
+    max-width: 400px;
+  }
+  .room-amenities-text:not(:first-child):not(:last-child) {
+    margin-bottom: 0;
+  }
+  .room-amenities-wrap {
+    display: flex;
+    gap: 80px;
+  }
+  .room-amenities-link {
+    justify-content: flex-end;
+    font-size: 20px;
+    font-family: 'Montserrat';
+  }
+  .room-amenities-btn {
+    margin-right: 0;
+  }
+  .room-amenities-btn {
+    min-width: 434px;
+    font-size: 24px;
+  }
+  .room-amenities-title ~ .room-amenities-text {
+    max-width: 757px;
+  }
+}
+@media screen and(min-width: 1280px) {
+  .room-amenities-wrap {
+    gap: 159px;
+  }
+}

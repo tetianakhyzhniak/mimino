@@ -1,0 +1,235 @@
+// Анна Полюхович
+.restaurant-gallery-section {
+    background-color: var(--background-main-color);
+}
+
+.restaurant-container {
+  position: relative;
+  padding-top: 16px;
+  
+}
+
+@media screen and (max-width:415px) {
+  .restaurant-container {
+      padding-bottom: 20px; 
+    }
+  
+}
+
+.restaurant-gallery-subtitle {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--subtitle-color);
+  margin-bottom: 12px;
+}
+
+.dark-main-logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--logo-dark-color);
+}
+
+.about-restaurant-gallery {
+  margin-top: 12px;
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--text-main-color);
+  width: 258px;
+}
+
+.about-restaurant-gallery.accent-text-rest {
+  color: var(--text-accent-color);
+  margin-top: 0;
+}
+
+.chef-img {
+    border-radius: 2px;
+        background-color: #dadada;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.meat-img {
+  border-radius: 2px;
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.meat-ph-and-description {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.about-restaurant-gallery.accent-text-rest {
+    width: 163px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1279px) {
+    .about-restaurant-gallery.accent-text-rest {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+}
+
+@media screen and (max-width: 1023px) {
+  .chef-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    margin-top: 28px;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 1024px) {
+  .restaurant-container {
+    padding-top: 120px;
+    padding-bottom: 262px; 
+  }
+
+  .restaurant-gallery-subtitle {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    margin-bottom: 4px;
+  }
+
+  .dark-main-logo {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+
+  .about-restaurant-gallery {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 439px;
+    margin-top: 24px;
+  }
+  
+  .meat-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  .chef-img {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    overflow: visible;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  .meat-ph-and-description {
+    margin-top: 142px;
+    margin-bottom: 0;
+  }
+
+  .about-restaurant-gallery.accent-text-rest {
+    width: 312px;
+    margin-left: 48px;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1280px) {
+
+  .restaurant-container {
+      padding-bottom: 207px;
+    }
+
+  .about-restaurant-gallery {
+    width: 518px;
+  }
+
+  .chef-img {
+    top: -33px;
+    right: 180px;
+  }
+
+  .meat-ph-and-description {
+    margin-top: 162px;
+  }
+
+  .about-restaurant-gallery.accent-text-rest {
+      width: 312px;
+      margin-left: 32px;
+      margin-top: 195px
+}
+}
+
+
+/////////////////////////// SLIDER/////////////////////////////
+
+
+  .slider-wrapper.slider-container-restaurant {
+    position: relative;
+    margin-right: -15px;
+  }
+@media screen and (min-width: 1024px) {
+  .slider-wrapper.slider-container-restaurant {
+      position: static;
+      margin-right: 0;
+    }
+}
+
+.slider-wrapper.slider-container-restaurant {
+  outline: none;
+  margin-top: 0;
+
+}
+
+.swiper-slide.restaurant-page {
+  overflow: hidden;
+  outline: none;
+
+}
+
+
+
+
+
+.button-wrapper.restaurant-page {
+  padding-right: 0;
+  margin-top: 20px;
+  width: 126px;
+  gap: 32px;
+}
+
+@media screen and (max-width:415px) {
+  .button-wrapper.restaurant-page {
+    padding-right: 15px;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  .button-wrapper.restaurant-page {
+    margin-top: 32px;
+  }
+    .slider-wrapper.slider-container-restaurant {
+      position: absolute;
+      top: 948px;
+      right: 60px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+  .button-wrapper.restaurant-page {
+    margin-top: 40px;
+  }
+    .slider-wrapper.slider-container-restaurant {
+      top: 899px;
+      right: 85px;
+    }
+
+
+}
